@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  height: 4em;
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.bgimg {
+  animation-name: slider;
+  animation-duration: 15s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  color: white;
+  text-align: center;
+  /* -o-animation-play-state: running; */
+  animation-iteration-count: infinite;
+  height: 570px;
+  background: url(https://images.unsplash.com/photo-1483982258113-b72862e6cff6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMHRoZW1lJTIwbmV3eW9ya3xlbnwwfDB8MHx8fDA%3D);
+}
+@keyframes slider {
+  25% {
+    background: url(https://images.unsplash.com/photo-1518343265568-51eec52d40da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMHRoZW1lJTIwbmV3eW9ya3xlbnwwfDB8MHx8fDA%3D);
+  }
+  50% {
+    background: url(https://images.unsplash.com/photo-1431440869543-efaf3388c585?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRhcmslMjB0aGVtZSUyMG5ld3lvcmt8ZW58MHwwfDB8fHww);
+  }
+  75% {
+    background: url(https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+  100% {
+    background: url(https://images.unsplash.com/photo-1493673272479-a20888bcee10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+}
+
+#band {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+}
+#bandhead {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1cm;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+#band div {
+  text-align: center;
+}
+#band p {
+  font-family: cursive;
+  font-size: larger;
+  color: rgb(120, 116, 116);
+  margin-bottom: 1rem;
+}
+#band article {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+#image1 {
+  margin: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+#image1 div {
+  display: inline;
+}
+#nameimg {
+  height: 300px;
+  display: inline;
+  margin-left: 2cm;
+}
+
+#tour {
+  background-color: black;
+  padding: 0.01em;
+  text-align: center;
+  height: 800px;
+}
+#tourhead {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5cm;
+  margin: 2cm;
+  box-sizing: border-box;
+}
+
+.card {
+  height: 400px;
+  width: 250px;
+  display: inline-block;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.card img {
+  height: 200px;
+  width: 250px;
+}
+.card div {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: justify;
+  margin: 18px;
+}
+#date {
+  color: gray;
+  text-transform: capitalize;
+  margin: 18px;
+}
+#write1 {
+  text-transform: none;
+}
+
+#contact {
+  height: 600px;
+  text-align: center;
+}
+#heading {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1cm;
+  margin-top: 88px;
+  margin-bottom: 15px;
+}
+#write2 {
+  color: darkgray;
+  text-transform: capitalize;
+  font-style: oblique;
+  margin-bottom: 50px;
+}
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.container p {
+  display: inline-block;
+  margin-right: 300px;
+  /* margin-left: 300px; */
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "a1 a2 ";
+}
+.container div {
+  display: inline;
+  text-align: left;
+}
+input {
+  width: 200px;
+}
+
+button {
+  background-color: black;
+  height: 1cm;
+  width: 2cm;
+  color: aliceblue;
+}
